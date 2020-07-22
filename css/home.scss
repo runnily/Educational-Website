@@ -1,0 +1,164 @@
+@import "../css/Networks/base.scss";
+
+
+
+#header-img {
+    background-color: $primary-color;
+    width: 100%;
+    height: 250px;
+    transform: skewY(-6deg);
+    position: relative;
+    bottom: 90px;
+
+
+    h1 {
+        position: absolute;
+        top: 10px;
+        margin: 100px;
+    }
+
+    form {
+        position: absolute;
+        top: 150px;
+        transform: skewY(6deg);
+        left: 1000px;
+        
+        input, button {
+            border-radius: 50px;
+        }
+    }
+}
+
+nav {
+    position: absolute;
+    top: 215px;
+    margin-left: 45px;
+    z-index: 2;
+    ul {
+        list-style-type: none;
+        background-color: $secondary-color;
+        //background-image: $secondary-color;
+        padding: 10px;
+        border-radius: 50px;
+    }
+
+    li {
+        padding-bottom: 100px;
+        a {
+            color: white;
+            width: 50em;
+            height: 50em;
+            text-decoration: none;
+        }
+
+        a:hover:not(.active){
+            color: black;
+        }
+
+    }
+
+    #last-element {
+        padding-bottom: inherit; //To let the last element have a normal padding spacing
+    }
+
+}
+
+@mixin text() {
+    position: absolute;
+    top: 50px;
+    margin: 25px;
+}
+
+#study {
+    background-color: #FBE4E4;
+    border-radius: 50px;
+    position: relative;
+    bottom: 110px;
+    left: 15%;
+    width: 300px;
+    height: 600px;
+    z-index: 1;
+    h2 {
+        position: absolute;
+        left: 30px;
+    }
+
+    #img-study-container {
+        position: absolute;
+        bottom: -30px;
+        left: 20px;
+
+        img {
+            float: right;
+        }
+    }
+
+    p {
+        @include text()
+    }
+}
+
+#learn {
+    background-color: #D4FAE5;
+    border-radius: 50px;
+    position: relative;
+    left:37%;
+    bottom: 710px;
+    width: 800px;
+    height: 300px;
+    z-index: 0;
+
+    h2 {
+        position: absolute;
+        left: 45%;
+    }
+
+    #img-learn-container {
+        position: absolute;
+        bottom: -60px;
+        left: 485px;
+
+        img {
+            float: right;
+        }
+    }
+
+    p {
+        @include text();
+    }
+}
+
+#quiz {
+    background-color: #E6E1FD;
+    border-radius: 50px;
+    position: relative;
+    left:37%;
+    bottom: 700px;
+    width: 800px;
+    height: 300px;
+    z-index: 0;
+
+    h2 {
+        position: absolute;
+        left: 45%;
+    }
+    #img-quiz-container {
+        position: absolute;
+        bottom: -30px;
+        left: 485px;
+
+        img {
+            float: right;
+        }
+    }
+
+    p {
+        @include text()
+    }
+}
+
+#note {
+    position: relative;
+    bottom: 600px;
+    left: 30%;
+}

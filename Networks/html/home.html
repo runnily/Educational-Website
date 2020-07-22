@@ -1,0 +1,98 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Networks</title>
+    <meta name="description" content="Computer Networks">
+    <meta name="author" content="runnily">
+    <link rel="stylesheet" href="../../css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> <!-- imports angular -->
+
+<body>
+    <div id="content">
+        <div>
+            <nav>
+                <ul data-ng-app="" data-ng-init="size='3em'">
+                    <li><a href="home.html"><svg width={{size}} height={{size}} viewBox="0 0 16 16"
+                                class="bi bi-house-door-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z" />
+                                <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                            </svg></a></li>
+                    <li><a href="study.html"><svg width={{size}} height={{size}} viewBox="0 0 16 16"
+                                class="bi bi-book-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.261 13.666c.345.14.739-.105.739-.477V2.5a.472.472 0 0 0-.277-.437c-1.126-.503-5.42-2.19-7.723.129C5.696-.125 1.403 1.56.277 2.063A.472.472 0 0 0 0 2.502V13.19c0 .372.394.618.739.477C2.738 12.852 6.125 12.113 8 14c1.875-1.887 5.262-1.148 7.261-.334z" />
+                            </svg></a></li>
+                    <li><a href="quiz.html"><svg width={{size}} height={{size}} viewBox="0 0 16 16"
+                                class="bi bi-ui-checks" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1z" />
+                                <path fill-rule="evenodd"
+                                    d="M2 1a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm0 8a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2H2zm.854-3.646l2-2a.5.5 0 1 0-.708-.708L2.5 4.293l-.646-.647a.5.5 0 1 0-.708.708l1 1a.5.5 0 0 0 .708 0zm0 8l2-2a.5.5 0 0 0-.708-.708L2.5 12.293l-.646-.647a.5.5 0 0 0-.708.708l1 1a.5.5 0 0 0 .708 0z" />
+                                <path
+                                    d="M7 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1z" />
+                                <path fill-rule="evenodd"
+                                    d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                            </svg></a></li>
+                    <li id="last-element"><a href="about.html"><svg width={{size}} height={{size}} viewBox="0 0 16 16"
+                                class="bi bi-question-circle-fill" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.57 6.033H5.25C5.22 4.147 6.68 3.5 8.006 3.5c1.397 0 2.673.73 2.673 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.355H7.117l-.007-.463c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.901 0-1.358.603-1.358 1.384zm1.251 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z" />
+                            </svg></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="header-img">
+            <h1>Computer Networks</h1>
+            <form action="javascript:;" method="GET">
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit" class="fa fa-search"></button>
+            </form>
+        </div>
+        <div id="study">
+            <h2>Study</h2>
+            <p> This aims to increase your knowledge about operations of the internet while using top-down appproach of
+                the TCP/IP model. As we follow the protocol in detail we will engage with the corresponding OSI layers.
+                There would be particular focus on the algorthiums used to achieve a reliable communication through an
+                unreliable network. </p>
+            <div id="img-study-container">
+                <img src="../../imgs/Picture 1.png" alt="study_img">
+            </div>
+
+        </div>
+        <div id="learn">
+            <h2>Learn</h2>
+            <p> Whether you want to reinforce your learning, or need a reminder about a particular layer in the TCP
+                model. This site includes
+                a brief summary about each TCP/IP layer corresponding to the sections you studied. </p>
+            <div id="img-learn-container">
+                <img src="../../imgs/Picture 2.png" alt="learn_img">
+            </div>
+        </div>
+        <div id="quiz">
+            <h2>Quiz</h2>
+            <p> To engage your knowledge pratically, we have indroduced quizes. As you learn each layer within the
+                TCP/IP model.</p>
+            <div id="img-quiz-container">
+                <img src="../../imgs/Picture 3.png" alt="quiz_img">
+            </div>
+        </div>
+        <div>
+            <p id="note">This site follows a top down approach of the TCP/IP network to enable a better understanding of
+                computer
+                networks</p>
+        </div>
+    </div>
+
+</body>
+
+</html
