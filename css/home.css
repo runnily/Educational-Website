@@ -3,12 +3,16 @@ html {
   font-family: "Gayathri", sans-serif;
 }
 
+#content {
+  overflow: hidden;
+}
+
 #header #header-img-1 {
   position: relative;
   border-radius: 50%;
   transform: skew(-6deg);
   background-color: #B4DA55;
-  background-image: linear-gradient(#B4DA55, #D4FAE5);
+  background-image: linear-gradient(blue, plum, #E6E1FD);
   width: 800px;
   height: 800px;
   bottom: 2040px;
@@ -19,19 +23,19 @@ html {
   border-radius: 50%;
   transform: skew(-6deg);
   background-color: #B4DA55;
-  background-image: linear-gradient(#B4DA55, #D4FAE5);
+  background-image: linear-gradient(blue, plum, #E6E1FD);
   width: 150px;
   height: 150px;
   bottom: 2510px;
   left: 1120px;
-  background-image: linear-gradient(green, lightgreen, white);
+  background-image: linear-gradient(plum, #E6E1FD, white);
 }
 #header #header-img-2 {
   position: relative;
   border-radius: 50%;
   transform: skew(-6deg);
   background-color: #B4DA55;
-  background-image: linear-gradient(#B4DA55, #D4FAE5);
+  background-image: linear-gradient(blue, plum, #E6E1FD);
   width: 700px;
   height: 700px;
   bottom: 470px;
@@ -42,7 +46,7 @@ html {
   border-radius: 50%;
   transform: skew(-6deg);
   background-color: #B4DA55;
-  background-image: linear-gradient(#B4DA55, #D4FAE5);
+  background-image: linear-gradient(blue, plum, #E6E1FD);
   width: 1000px;
   height: 1000px;
   bottom: 1440px;
@@ -50,14 +54,14 @@ html {
 }
 #header h1 {
   position: absolute;
-  top: 10px;
+  top: 65px;
   transform: skew(-6deg);
   margin: 50px;
 }
 #header form {
-  position: absolute;
-  top: 55px;
-  left: 1000px;
+  position: relative;
+  bottom: 2500px;
+  left: 60%;
 }
 #header form input, #header form button {
   border-radius: 50px;
@@ -67,7 +71,6 @@ nav {
   position: absolute;
   top: 290px;
   margin-left: 30px;
-  z-index: 2;
 }
 nav ul {
   list-style-type: none;
@@ -100,7 +103,6 @@ nav #last-element {
   left: 14%;
   width: 300px;
   height: 600px;
-  z-index: 1;
 }
 #study h2 {
   position: absolute;
@@ -113,6 +115,8 @@ nav #last-element {
 }
 #study #img-study-container img {
   float: right;
+  max-width: 100%;
+  height: auto;
 }
 #study p {
   position: absolute;
@@ -124,7 +128,7 @@ nav #last-element {
 
 #learn {
   background-color: #D4FAE5;
-  background-image: linear-gradient(plum, #E6E1FD, white);
+  background-image: linear-gradient(yellow, lightyellow, white);
   border-radius: 100px;
   position: relative;
   left: 36%;
@@ -144,6 +148,8 @@ nav #last-element {
 }
 #learn #img-learn-container img {
   float: right;
+  max-width: 100%;
+  height: auto;
 }
 #learn p {
   position: absolute;
@@ -157,7 +163,6 @@ nav #last-element {
   background-color: #E6E1FD;
   background-image: linear-gradient(lightgreen, #D4FAE5, white);
   border-radius: 100px;
-  border-radius: 50px;
   position: relative;
   left: 36%;
   bottom: 2995px;
@@ -176,6 +181,8 @@ nav #last-element {
 }
 #quiz #img-quiz-container img {
   float: right;
+  max-width: 100%;
+  height: auto;
 }
 #quiz p {
   position: absolute;
@@ -183,7 +190,6 @@ nav #last-element {
   margin: 25px;
   color: gray;
   font-size: 18px;
-  width: 500px;
 }
 
 #note {
@@ -191,6 +197,74 @@ nav #last-element {
   bottom: 3000px;
   left: 25%;
   color: purple;
+}
+
+@media only screen and (max-width: 1300px) {
+  nav {
+    top: -20px;
+    margin-left: 0px;
+    left: 0px;
+    width: 100%;
+  }
+  nav ul {
+    border-radius: 0%;
+  }
+  nav ul li {
+    padding-bottom: 0px;
+    display: inline;
+    padding-left: 5%;
+  }
+  nav ul #last-element {
+    padding-right: 200px;
+  }
+
+  .links {
+    position: relative;
+    bottom: 2300px;
+    margin: 20px;
+  }
+  .links #study {
+    width: 100%;
+    height: 300px;
+    left: 0%;
+    bottom: 0%;
+    padding-bottom: 10%;
+  }
+  .links #study #img-study-container {
+    position: absolute;
+    bottom: -10%;
+    right: 1%;
+    left: 485px;
+  }
+  .links #learn {
+    width: 100%;
+    height: 300px;
+    left: 0%;
+    bottom: 0%;
+    padding-bottom: 10%;
+  }
+  .links #learn #img-learn-container {
+    position: absolute;
+    bottom: -10%;
+    right: 1%;
+  }
+  .links #quiz {
+    width: 100%;
+    height: 300px;
+    left: 0%;
+    bottom: 0%;
+    padding-bottom: 10%;
+  }
+  .links #quiz #img-quiz-container {
+    position: absolute;
+    bottom: -10%;
+    right: 1%;
+  }
+
+  #note {
+    bottom: 2200px;
+    left: 3%;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */
