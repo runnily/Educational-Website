@@ -78,7 +78,7 @@ html {
 
 nav {
   position: absolute;
-  bottom: -1.5%;
+  bottom: -3.5%;
   z-index: 2;
   left: 10%;
 }
@@ -99,14 +99,14 @@ nav li a:hover:not(.active) {
 .links {
   position: absolute;
   height: 80vh;
-  bottom: 0;
+  bottom: -85%;
   background-color: #A4B2ED;
   opacity: 90%;
   border-top-right-radius: 100px;
   border-top-left-radius: 100px;
-  padding-top: 10%;
-  padding-bottom: 15%;
-  overflow: scroll;
+  padding-top: 25%;
+  padding-bottom: 10%;
+  overflow: hidden;
 }
 .links #arrow-up {
   border: none;
@@ -114,7 +114,7 @@ nav li a:hover:not(.active) {
   font-size: 20px;
   position: absolute;
   left: 45%;
-  top: 3%;
+  top: 0%;
   color: white;
 }
 .links #arrow-up a:hover {
@@ -126,7 +126,7 @@ nav li a:hover:not(.active) {
   font-size: 20px;
   position: absolute;
   left: 45%;
-  top: 3%;
+  top: 0%;
   color: white;
   visibility: hidden;
 }
