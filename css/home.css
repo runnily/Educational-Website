@@ -11,7 +11,7 @@ html {
   position: relative;
   border-radius: 50%;
   transform: skew(-6deg);
-  background-color: #B4DA55;
+  background-color: #F42069;
   background-image: linear-gradient(blue, plum, #E6E1FD);
   width: 800px;
   height: 800px;
@@ -22,19 +22,18 @@ html {
   position: relative;
   border-radius: 50%;
   transform: skew(-6deg);
-  background-color: #B4DA55;
+  background-color: #F42069;
   background-image: linear-gradient(blue, plum, #E6E1FD);
   width: 150px;
   height: 150px;
   bottom: 2510px;
   left: 1120px;
-  background-image: linear-gradient(plum, #E6E1FD, white);
 }
 #header #header-img-2 {
   position: relative;
   border-radius: 50%;
   transform: skew(-6deg);
-  background-color: #B4DA55;
+  background-color: #F42069;
   background-image: linear-gradient(blue, plum, #E6E1FD);
   width: 700px;
   height: 700px;
@@ -45,7 +44,7 @@ html {
   position: relative;
   border-radius: 50%;
   transform: skew(-6deg);
-  background-color: #B4DA55;
+  background-color: #F42069;
   background-image: linear-gradient(blue, plum, #E6E1FD);
   width: 1000px;
   height: 1000px;
@@ -55,7 +54,6 @@ html {
 #header h1 {
   position: absolute;
   top: 65px;
-  transform: skew(-6deg);
   margin: 50px;
 }
 #header form {
@@ -65,6 +63,10 @@ html {
 }
 #header form input, #header form button {
   border-radius: 50px;
+}
+
+#arrow-down, #arrow-up {
+  visibility: hidden;
 }
 
 nav {
@@ -96,7 +98,6 @@ nav #last-element {
 
 #study {
   background-color: #FBE4E4;
-  background-image: linear-gradient(lightpink, #FBE4E4, white);
   border-radius: 100px;
   position: relative;
   bottom: 2400px;
@@ -128,7 +129,6 @@ nav #last-element {
 
 #learn {
   background-color: #D4FAE5;
-  background-image: linear-gradient(yellow, lightyellow, white);
   border-radius: 100px;
   position: relative;
   left: 36%;
@@ -161,7 +161,6 @@ nav #last-element {
 
 #quiz {
   background-color: #E6E1FD;
-  background-image: linear-gradient(lightgreen, #D4FAE5, white);
   border-radius: 100px;
   position: relative;
   left: 36%;
@@ -228,7 +227,7 @@ nav #last-element {
     height: 300px;
     left: 0%;
     bottom: 0%;
-    padding-bottom: 10%;
+    margin-bottom: 2%;
   }
   .links #study #img-study-container {
     position: absolute;
@@ -241,7 +240,7 @@ nav #last-element {
     height: 300px;
     left: 0%;
     bottom: 0%;
-    padding-bottom: 10%;
+    margin-bottom: 2%;
   }
   .links #learn #img-learn-container {
     position: absolute;
@@ -253,7 +252,7 @@ nav #last-element {
     height: 300px;
     left: 0%;
     bottom: 0%;
-    padding-bottom: 10%;
+    margin-bottom: 2%;
   }
   .links #quiz #img-quiz-container {
     position: absolute;

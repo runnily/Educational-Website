@@ -1,63 +1,9 @@
 @import "../css/Networks/base.scss";
+@import "theme.scss";
 @import url('https://fonts.googleapis.com/css2?family=Gayathri&family=Josefin+Sans:ital,wght@0,300;0,400;1,400&display=swap');
 
-html {
-    font-family: 'Gayathri', sans-serif;
-}
-
-#content {
-    overflow: hidden;
-}
-
-@mixin circle($width, $height, $bottom, $left) {
-    position: relative;
-    border-radius: 50%;
-    transform: skew(-6deg);
-    background-color: #B4DA55;
-    background-image: linear-gradient(blue, plum, #E6E1FD);
-    width: $width;
-    height: $height;
-    bottom: $bottom;
-    left: $left;
-}
-
-#header {
-
-    #header-img-1 {
-        @include circle(800px, 800px, 2040px, 430px);
-        
-    }
-    #header-img-3 {
-        @include circle(150px, 150px, 2510px, 1120px);
-        background-image: linear-gradient(plum, #E6E1FD, white);
-    }
-
-    #header-img-2 {
-        @include circle(700px, 700px, 470px, 1010px)
-    }
-
-    #header-img {
-        @include circle(1000px, 1000px, 1440px, -220px);
-
-    }
-
-    h1 {
-        position: absolute;
-        top: 65px;
-        transform: skew(-6deg);
-        margin: 50px;
-    }
-
-    form {
-        position: relative;
-        bottom: 2500px;
-        left: 60%;
-        
-        input, button {
-            border-radius: 50px;
-        }
-    }
-
+#arrow-down, #arrow-up {
+    visibility: hidden; // These are elements made for the mobile page, far the main page there are simply hidden
 }
 
 nav {
@@ -66,8 +12,7 @@ nav {
     margin-left: 30px;
     ul {
         list-style-type: none;
-        background-color: #F42069;
-        //background-image: $secondary-color;
+        background-color: $secondary-color;
         padding: 10px;
         border-radius: 50px;
     }
@@ -92,6 +37,7 @@ nav {
     }
 
 }
+// ------------------------------------------------------------------- This is the main page section -------------------------------------------------------------------
 
 @mixin text() {
     position: absolute;
@@ -102,8 +48,8 @@ nav {
 }
 
 #study {
+    // Defines the study div element; where students can click on go onto to learn
     background-color: #FBE4E4;
-    background-image: linear-gradient(lightpink, #FBE4E4, white);
     border-radius: 100px;
     position: relative;
     bottom: 2400px;
@@ -136,8 +82,10 @@ nav {
 }
 
 #learn {
+
+    // Defines the learn div element; where students can click on go see the summary of the revision notes
+
     background-color: #D4FAE5;
-    background-image: linear-gradient(yellow, lightyellow, white);
     border-radius: 100px;
     position: relative;
     left: 36%;
@@ -169,8 +117,10 @@ nav {
 }
 
 #quiz {
+
+    // Defines the study div element; where students can click on go onto quizes
+
     background-color: #E6E1FD;
-    background-image: linear-gradient(lightgreen, #D4FAE5, white);
     border-radius: 100px;
     position: relative;
     left: 36%;
@@ -201,20 +151,25 @@ nav {
 }
 
 #note {
+    // Shows what the blog is about
     position: relative;
     bottom: 3000px;
     left: 25%;
     color: purple;
 }
 
+// ------------------------------------------------------------------- Defines the content for smaller pages -------------------------------------------------------------------
+
 @media only screen and (max-width: 1300px) {
 
     @mixin  border-section() {
-        width: 100%;
+        // A function/mixin to define how each border section would appear like
+        width: 100%; // makes the width response corresponding to the height
         height: 300px;
+        // To rests the positions
         left: 0%;
         bottom: 0%; 
-        padding-bottom: 10%;
+        margin-bottom: 2%;
     }
 
     @mixin border-section-container {
@@ -242,6 +197,7 @@ nav {
             }
         }
     }
+    
     .links {
         position: relative;
         bottom: 2300px;

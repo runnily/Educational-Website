@@ -1,0 +1,107 @@
+@import "../css/Networks/base.scss";
+@import "theme.scss";
+@import url('https://fonts.googleapis.com/css2?family=Gayathri&family=Josefin+Sans:ital,wght@0,300;0,400;1,400&display=swap');
+
+nav {
+    position: relative;
+    bottom: 1510px;
+    z-index: 2;
+
+    ul {
+        list-style-type: none;
+    }
+
+    li {
+        display: inline;
+        padding-left: 7%;
+        
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover:not(.active) {
+            color: black;
+        }
+    }
+}
+.links {
+
+    @mixin  arrow() {
+        border: none;
+        background-color: inherit;
+        font-size: 20px;
+        position: absolute;
+        left: 45%;
+        top: 3%;
+        color: white;
+        a:hover {
+            color: bl
+        }
+    }
+    #arrow-up {
+        @include arrow();
+    }
+
+    #arrow-down {
+        @include arrow();
+        visibility: hidden;
+    }
+
+
+    background-color: $secondary-colorTwo;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    padding-top: 10%;
+    padding-bottom: 15%;
+    position: relative;
+    bottom: 2300px;
+    overflow: hidden;
+
+    @mixin sections($color, $margin) {
+        background-color: $color;
+        border-radius: 50px;
+        width: 90%;
+        height: 200px;
+        position: relative;
+        left: 5%;
+
+        h2 {
+            padding-left: 5%;
+            padding-top: 5%;
+        }
+
+        p {
+            margin: $margin;
+            font-size: 2.3vw;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+
+        img {
+            float: right;
+            width: 130px;
+            height: 40%;
+        }
+    }
+
+    #study {
+        @include sections(#FBE4E4, -4%);
+    }
+
+    #learn {
+        @include sections(#CBFDE4, 0%);
+    }
+
+    #quiz {
+        @include sections(#E8DEFF, 0%);
+    }
+
+}
+
+#note {
+    position: relative;
+    bottom: 1510px;
+    margin: 10%;
+    color: #4A5CE6;
+}

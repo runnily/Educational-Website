@@ -1,0 +1,60 @@
+// Defines the font family stack for the web page
+html {
+    font-family: 'Gayathri', sans-serif;
+}
+
+// This is to make the div header elements hidden
+#content {
+    overflow: hidden;
+}
+
+// ------------------------------------------------------------------- This is the header section -------------------------------------------------------------------
+@mixin circle($width, $height, $bottom, $left) {
+    // A function which creates a cicrular div element used for as a header image
+    position: relative;
+    border-radius: 50%;
+    transform: skew(-6deg);
+    background-color: $secondary-color;
+    background-image: $primary-color;
+    width: $width;
+    height: $height;
+    bottom: $bottom;
+    left: $left;
+}
+
+#header {
+
+    #header-img-1 {
+        @include circle(800px, 800px, 2040px, 430px);
+        
+    }
+    #header-img-3 {
+        @include circle(150px, 150px, 2510px, 1120px);
+    }
+
+    #header-img-2 {
+        @include circle(700px, 700px, 470px, 1010px)
+    }
+
+    #header-img {
+        @include circle(1000px, 1000px, 1440px, -220px);
+
+    }
+
+    h1 {
+        position: absolute;
+        top: 65px;
+        margin: 50px;
+    }
+
+    form {
+        position: relative;
+        bottom: 2500px;
+        left: 60%;
+        
+        input, button {
+            border-radius: 50px;
+        }
+    }
+
+}

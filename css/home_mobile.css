@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Gayathri&family=Josefin+Sans:ital,wght@0,300;0,400;1,400&display=swap");
+html {
+  font-family: "Gayathri", sans-serif;
+}
+
+#content {
+  overflow: hidden;
+}
+
+#header #header-img-1 {
+  position: relative;
+  border-radius: 50%;
+  transform: skew(-6deg);
+  background-color: #F42069;
+  background-image: linear-gradient(blue, plum, #E6E1FD);
+  width: 800px;
+  height: 800px;
+  bottom: 2040px;
+  left: 430px;
+}
+#header #header-img-3 {
+  position: relative;
+  border-radius: 50%;
+  transform: skew(-6deg);
+  background-color: #F42069;
+  background-image: linear-gradient(blue, plum, #E6E1FD);
+  width: 150px;
+  height: 150px;
+  bottom: 2510px;
+  left: 1120px;
+}
+#header #header-img-2 {
+  position: relative;
+  border-radius: 50%;
+  transform: skew(-6deg);
+  background-color: #F42069;
+  background-image: linear-gradient(blue, plum, #E6E1FD);
+  width: 700px;
+  height: 700px;
+  bottom: 470px;
+  left: 1010px;
+}
+#header #header-img {
+  position: relative;
+  border-radius: 50%;
+  transform: skew(-6deg);
+  background-color: #F42069;
+  background-image: linear-gradient(blue, plum, #E6E1FD);
+  width: 1000px;
+  height: 1000px;
+  bottom: 1440px;
+  left: -220px;
+}
+#header h1 {
+  position: absolute;
+  top: 65px;
+  margin: 50px;
+}
+#header form {
+  position: relative;
+  bottom: 2500px;
+  left: 60%;
+}
+#header form input, #header form button {
+  border-radius: 50px;
+}
+
+nav {
+  position: relative;
+  bottom: 1510px;
+  z-index: 2;
+}
+nav ul {
+  list-style-type: none;
+}
+nav li {
+  display: inline;
+  padding-left: 7%;
+}
+nav li a {
+  color: white;
+  text-decoration: none;
+}
+nav li a:hover:not(.active) {
+  color: black;
+}
+
+.links {
+  background-color: #A4B2ED;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  padding-top: 10%;
+  padding-bottom: 15%;
+  position: relative;
+  bottom: 2300px;
+  overflow: hidden;
+}
+.links #arrow-up {
+  border: none;
+  background-color: inherit;
+  font-size: 20px;
+  position: absolute;
+  left: 45%;
+  top: 3%;
+  color: white;
+}
+.links #arrow-up a:hover {
+  color: bl;
+}
+.links #arrow-down {
+  border: none;
+  background-color: inherit;
+  font-size: 20px;
+  position: absolute;
+  left: 45%;
+  top: 3%;
+  color: white;
+  visibility: hidden;
+}
+.links #arrow-down a:hover {
+  color: bl;
+}
+.links #study {
+  background-color: #FBE4E4;
+  border-radius: 50px;
+  width: 90%;
+  height: 200px;
+  position: relative;
+  left: 5%;
+}
+.links #study h2 {
+  padding-left: 5%;
+  padding-top: 5%;
+}
+.links #study p {
+  margin: -4%;
+  font-size: 2.3vw;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.links #study img {
+  float: right;
+  width: 130px;
+  height: 40%;
+}
+.links #learn {
+  background-color: #CBFDE4;
+  border-radius: 50px;
+  width: 90%;
+  height: 200px;
+  position: relative;
+  left: 5%;
+}
+.links #learn h2 {
+  padding-left: 5%;
+  padding-top: 5%;
+}
+.links #learn p {
+  margin: 0%;
+  font-size: 2.3vw;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.links #learn img {
+  float: right;
+  width: 130px;
+  height: 40%;
+}
+.links #quiz {
+  background-color: #E8DEFF;
+  border-radius: 50px;
+  width: 90%;
+  height: 200px;
+  position: relative;
+  left: 5%;
+}
+.links #quiz h2 {
+  padding-left: 5%;
+  padding-top: 5%;
+}
+.links #quiz p {
+  margin: 0%;
+  font-size: 2.3vw;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.links #quiz img {
+  float: right;
+  width: 130px;
+  height: 40%;
+}
+
+#note {
+  position: relative;
+  bottom: 1510px;
+  margin: 10%;
+  color: #4A5CE6;
+}
+
+/*# sourceMappingURL=home_mobile.css.map */
