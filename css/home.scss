@@ -1,6 +1,6 @@
 @import "../css/Networks/base.scss";
 @import "theme.scss";
-@import url('https://fonts.googleapis.com/css2?family=Gayathri&family=Josefin+Sans:ital,wght@0,300;0,400;1,400&display=swap');
+//import url('https://fonts.googleapis.com/css2?family=Gayathri&family=Josefin+Sans:ital,wght@0,300;0,400;1,400&display=swap');
 
 #arrow-down, #arrow-up {
     visibility: hidden; // These are elements made for the mobile page, far the main page there are simply hidden
@@ -52,7 +52,7 @@ nav {
     background-color: #FBE4E4;
     border-radius: 100px;
     position: relative;
-    bottom: 2400px;
+    bottom: 2700px;
     left: 14%;
     width: 300px;
     height: 600px;
@@ -89,7 +89,7 @@ nav {
     border-radius: 100px;
     position: relative;
     left: 36%;
-    bottom: 3005px;
+    bottom: 3300px;
     width: 800px;
     height: 300px;
     z-index: 0;
@@ -124,7 +124,7 @@ nav {
     border-radius: 100px;
     position: relative;
     left: 36%;
-    bottom: 2995px;
+    bottom: 3295px;
     width: 800px;
     height: 300px;
     z-index: 0;
@@ -231,7 +231,7 @@ nav {
     }
 
     #note {      
-        bottom: 2200px;
+        bottom:  3290px;
         left: 3%;
     }
 }

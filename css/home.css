@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Gayathri&family=Josefin+Sans:ital,wght@0,300;0,400;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dekko&display=swap");
 html {
-  font-family: "Gayathri", sans-serif;
+  font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
 }
 
 #content {
@@ -58,11 +58,14 @@ html {
 }
 #header form {
   position: relative;
-  bottom: 2500px;
+  bottom: 2780px;
   left: 60%;
 }
 #header form input, #header form button {
   border-radius: 50px;
+}
+#header #mobile_header {
+  visibility: hidden;
 }
 
 #arrow-down, #arrow-up {
@@ -100,7 +103,7 @@ nav #last-element {
   background-color: #FBE4E4;
   border-radius: 100px;
   position: relative;
-  bottom: 2400px;
+  bottom: 2700px;
   left: 14%;
   width: 300px;
   height: 600px;
@@ -132,7 +135,7 @@ nav #last-element {
   border-radius: 100px;
   position: relative;
   left: 36%;
-  bottom: 3005px;
+  bottom: 3300px;
   width: 800px;
   height: 300px;
   z-index: 0;
@@ -164,7 +167,7 @@ nav #last-element {
   border-radius: 100px;
   position: relative;
   left: 36%;
-  bottom: 2995px;
+  bottom: 3295px;
   width: 800px;
   height: 300px;
   z-index: 0;
@@ -261,7 +264,7 @@ nav #last-element {
   }
 
   #note {
-    bottom: 2200px;
+    bottom: 3290px;
     left: 3%;
   }
 }

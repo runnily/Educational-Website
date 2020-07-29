@@ -11,18 +11,20 @@ function closeMenu() {
             clearInterval(id);
             document.getElementById("arrow-down").style.visibility = "hidden";
             document.getElementById("arrow-up").style.visibility = "visible";
+            document.getElementById("nav").style.visibility = "visible";
         } else {
             size = size - 1;
             menu.style.bottom = size + "%";
         }
     },10);
 
+
 }
 
 function openMenu() {
     var menu = document.getElementsByClassName("links")[0];
     menu.style.overflow = "scroll";
-    //document.getElementById("nav").style.visibility = "visible";
+    document.getElementById("nav").style.visibility = "hidden";
     var size = -84;
     maxHeight = -1;
     menu.style.paddingTop= "10%";

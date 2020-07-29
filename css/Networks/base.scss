@@ -1,4 +1,11 @@
-$primary-color: linear-gradient(blue, plum, #E6E1FD);
+@import url('https://fonts.googleapis.com/css2?family=Dekko&display=swap');
+
+
+$header-color: linear-gradient(blue, plum, #E6E1FD);
+$primary-color: #4A5CE6;
 $secondary-color: #F42069;
-$secondary-colorTwo: #A4B2ED;
-$secondary-colorThree: #4A5CE6;
+$text-color: white;
+
+@mixin text-font() {
+    font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
+}
