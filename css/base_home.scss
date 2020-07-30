@@ -1,4 +1,28 @@
+@import "base_theme.scss";
 // ------------------------------------------------------------------- This is the main page section -------------------------------------------------------------------
+//scroll
+/* width */
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $primary-color; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $tertiary-color; 
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+ }
+
 @mixin text() {
     position: absolute;
     top: 50px;
@@ -18,9 +42,9 @@
         // Defines the study div element; where students can click on go onto to learn
         background-color: #FBE4E4;
         border-radius: 100px;
-        position: relative;
-        bottom: 2670px;
-        left: 14%;
+        position: absolute;
+        left: 15%;
+        bottom: 3%;
         width: 300px;
         height: 600px;
 
@@ -55,9 +79,9 @@
 
     background-color: #D4FAE5;
     border-radius: 100px;
-    position: relative;
+    position: absolute;
     left: 36%;
-    bottom: 3300px;
+    bottom: 35%;
     width: 800px;
     height: 300px;
     z-index: 0;
@@ -90,9 +114,9 @@
 
     background-color: #E6E1FD;
     border-radius: 100px;
-    position: relative;
+    position: absolute;
     left: 36%;
-    bottom: 3280px;
+    bottom: 3%;
     width: 800px;
     height: 300px;
     z-index: 0;
@@ -120,86 +144,100 @@
 
 #note {
     // Shows what the blog is about
-    position: relative;
-    bottom: 3250px;
+    position: absolute;
+    text-align: center;
+    bottom: -3%;
     left: 25%;
     color: $tertiary-color
+}
+
+#quiz_border {
+    position: absolute;
+    bottom: 0%;
+    left: 8%;
+
+    #quiz_page {
+        width: 85vw;
+        height: 85vh;
+        background: white;
+        border-radius: 50px;
+        border: solid;
+    }
 }
 
 // ------------------------------------------------------------------- Defines the content for smaller pages -------------------------------------------------------------------
 
 @media only screen and (max-width: 1300px) {
 
-    @mixin  border-section() {
-        // A function/mixin to define how each border section would appear like
-        width: 100%; // makes the width response corresponding to the height
-        height: 300px;
-        // To rests the positions
-        left: 0%;
-        bottom: 0%; 
-        margin-bottom: 2%;
-    }
-
-    @mixin border-section-container {
-        position: absolute;
-        bottom: -20%;
-        right: -5%;
-    }
-
-    nav {
-        top: -20px;
-        margin-left: 0px;
-        left: 0px;
-        width: 100%;
-
-        ul {
-            border-radius: 0%;
-            li {
-                padding-bottom: 0px;
-                display: inline;
-                padding-left: 5%;
-            }
-
-            #last-element {
-                padding-right: 200px;
-            }
-        }
-    }
-    
-    .links {
-        position: relative;
-        bottom: 2700px;
-        margin: 20px;
-
-        #study {
-            @include border-section();
-
-            #img-study-container {
-                @include border-section-container;
-                left: 485px;
-            }
-
+    #content {
+        @mixin  border-section() {
+            width: 100%;
+            height: 300px;
+            left: 0%;
+            margin-bottom: 5%;
         }
 
-        #learn {
-            @include border-section();
+        @mixin border-section-container {
+            position: absolute;
+            right: 0%;
+        }
 
-            #img-learn-container {
-                @include border-section-container;
+        nav {
+            top: -20px;
+            margin-left: 0px;
+            left: 0px;
+            width: 100%;
+
+            ul {
+                border-radius: 0%;
+                li {
+                    padding-bottom: 0px;
+                    display: inline;
+                    padding-left: 5%;
+                }
+
+                #last-element {
+                    padding-right: 200px;
+                }
+            }
+        }
+        
+        .links {
+
+            #study {
+                @include border-section();
+                bottom: 40%;
+
+                #img-study-container {
+                    @include border-section-container;
+                    left: 485px;
+                }
+
+            }
+
+            #learn {
+                @include border-section();
+                bottom: 8%;
+
+                #img-learn-container {
+                    @include border-section-container;
+                }
+            }
+
+            #quiz {
+                @include border-section();
+                bottom: -24%;
+
+                #img-quiz-container {
+                    @include border-section-container;
+                }
             }
         }
 
-        #quiz {
-            @include border-section();
-
-            #img-quiz-container {
-                @include border-section-container;
-            }
+        #note {      
+            bottom: -32%;
+            left: 15%;
         }
-    }
-
-    #note {      
-        bottom: 2650px;
-        left: 15%;
     }
 }
+

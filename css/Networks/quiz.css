@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Dekko&display=swap");
+/*
+    Arthur: 
+        Adanna Obibuaku
+    Date:
+        30/07/20
+    Purpose:
+        This is the design for the quiz page
+*/
+h1, p {
+  font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
+}
+
+h1 {
+  text-align: center;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 -10px purple;
+  }
+  40% {
+    box-shadow: 0 0 20px purple;
+  }
+  60% {
+    box-shadow: 0 0 20px purple;
+  }
+  100% {
+    box-shadow: 0 0 -10px purple;
+  }
+}
+#button a {
+  text-decoration: none;
+  color: black;
+}
+#button a:hover .button_links {
+  background-color: #4A5CE6;
+  color: white;
+  animation: glowing 5000ms infinite;
+}
+#button .button_links {
+  border: solid 2px grey;
+  border-radius: 50px;
+  margin: 5%;
+}
+#button .button_links p {
+  text-align: center;
+}
+
+/*# sourceMappingURL=quiz.css.map */

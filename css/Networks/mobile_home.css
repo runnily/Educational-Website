@@ -33,22 +33,16 @@ h1, p {
   max-width: 375px;
   height: 100%;
   position: relative;
-  left: 10vw;
+  left: 10%;
 }
 
 #content {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: relative;
   background-color: #A49CF9;
   border-radius: 10px;
   overflow: hidden;
-}
-
-html {
-  width: 100%;
-  height: 100vh;
-  position: relative;
 }
 
 nav {
@@ -82,6 +76,7 @@ nav li a:hover:not(.active) {
   padding-top: 25%;
   padding-bottom: 10%;
   overflow: scroll;
+  z-index: 1;
 }
 .links a {
   cursor: pointer;
@@ -189,6 +184,29 @@ nav li a:hover:not(.active) {
 #note {
   margin: 10%;
   text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+  #header #mobile_header {
+    left: 3vw;
+  }
+
+  nav {
+    left: 14%;
+  }
+}
+#quiz_border {
+  position: absolute;
+  bottom: 15%;
+  left: 4.5%;
+}
+#quiz_border #quiz_page {
+  border-radius: 50px;
+  width: 90vw;
+  height: 80vh;
+  border: solid;
+  background-color: white;
+  z-index: 0;
 }
 
 /*# sourceMappingURL=mobile_home.css.map */

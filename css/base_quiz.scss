@@ -1,0 +1,49 @@
+/*
+    Arthur: 
+        Adanna Obibuaku
+    Date:
+        30/07/20
+    Purpose:
+        This is the design for the quiz page
+*/
+
+h1, p {
+    @include text-font();
+}
+
+h1 {
+    text-align: center;
+}
+
+@keyframes glowing {
+    0% { box-shadow: 0 0 -10px $tertiary-color; }
+    40% { box-shadow: 0 0 20px $tertiary-color; }
+    60% { box-shadow: 0 0 20px $tertiary-color; }
+    100% { box-shadow: 0 0 -10px $tertiary-color; }
+    }
+
+#button {
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        .button_links {
+            background-color: #4A5CE6;
+            color: white;
+            animation: glowing 5000ms infinite;
+        }
+    }
+
+    .button_links {
+        border: solid 2px grey;
+        border-radius: 50px;
+        margin: 5%;
+
+        p {
+            text-align: center;
+        }
+    }
+}
