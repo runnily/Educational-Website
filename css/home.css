@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Dekko&display=swap");
+/*
+ Arthur: 
+    Adanna
+ Date: 
+    26/07/20
+ Purpose:
+    The holds the overall theme for the web page
+*/
 html {
   font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
 }
@@ -58,11 +66,21 @@ html {
 }
 #header form {
   position: relative;
-  bottom: 2780px;
+  bottom: 2800px;
   left: 60%;
 }
 #header form input, #header form button {
-  border-radius: 50px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid gray;
+}
+#header form input[type=text] {
+  width: 30%;
+}
+#header form button {
+  color: white;
+  background-color: #F42069;
+  cursor: pointer;
 }
 #header #mobile_header {
   visibility: hidden;
@@ -99,30 +117,34 @@ nav #last-element {
   padding-bottom: inherit;
 }
 
-#study {
+.links a {
+  cursor: pointer;
+  color: black;
+}
+.links #study {
   background-color: #FBE4E4;
   border-radius: 100px;
   position: relative;
-  bottom: 2700px;
+  bottom: 2670px;
   left: 14%;
   width: 300px;
   height: 600px;
 }
-#study h2 {
+.links #study h2 {
   position: absolute;
   left: 40%;
 }
-#study #img-study-container {
+.links #study #img-study-container {
   position: absolute;
   bottom: -30px;
   left: 20px;
 }
-#study #img-study-container img {
+.links #study #img-study-container img {
   float: right;
   max-width: 100%;
   height: auto;
 }
-#study p {
+.links #study p {
   position: absolute;
   top: 50px;
   margin: 25px;
@@ -167,7 +189,7 @@ nav #last-element {
   border-radius: 100px;
   position: relative;
   left: 36%;
-  bottom: 3295px;
+  bottom: 3280px;
   width: 800px;
   height: 300px;
   z-index: 0;
@@ -196,7 +218,7 @@ nav #last-element {
 
 #note {
   position: relative;
-  bottom: 3000px;
+  bottom: 3250px;
   left: 25%;
   color: purple;
 }
@@ -222,7 +244,7 @@ nav #last-element {
 
   .links {
     position: relative;
-    bottom: 2300px;
+    bottom: 2700px;
     margin: 20px;
   }
   .links #study {
@@ -234,8 +256,8 @@ nav #last-element {
   }
   .links #study #img-study-container {
     position: absolute;
-    bottom: -10%;
-    right: 1%;
+    bottom: -20%;
+    right: -5%;
     left: 485px;
   }
   .links #learn {
@@ -247,8 +269,8 @@ nav #last-element {
   }
   .links #learn #img-learn-container {
     position: absolute;
-    bottom: -10%;
-    right: 1%;
+    bottom: -20%;
+    right: -5%;
   }
   .links #quiz {
     width: 100%;
@@ -259,13 +281,13 @@ nav #last-element {
   }
   .links #quiz #img-quiz-container {
     position: absolute;
-    bottom: -10%;
-    right: 1%;
+    bottom: -20%;
+    right: -5%;
   }
 
   #note {
-    bottom: 3290px;
-    left: 3%;
+    bottom: 2650px;
+    left: 15%;
   }
 }
 

@@ -11,15 +11,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Sets a view port for the web page-->
     <link rel="stylesheet" href="../../css/home.css" media="(min-width: 545px)">
-    <link rel="stylesheet" href="../../css/home_mobile.css" media="(max-width: 545px)">
+    <link rel="stylesheet" href="../../css/home_mobile.css" media="(max-width: 546px)">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="../../js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> <!-- imports angular -->
     
     
 
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> <!-- imports angular -->
 
 <body>
     <div id="content">
@@ -29,7 +29,7 @@
                 <div id="header-img"></div>
                 <div id="header-img-1"></div>
                 <div id="header-img-3"></div>
-                <div><img src="../../imgs/Picture 4.png" alt="header_img" id="mobile_header"></div>
+                <div><img src="../../imgs/Picture4.png" alt="header_img" id="mobile_header"></div>
                 <h1>Computer Networks</h1>
                 <form action="javascript:;" method="GET">
                     <input type="text" placeholder="Search..." name="search">
@@ -70,10 +70,11 @@
             </nav>
         </div>
         <div class="links">
-            <button id="arrow-up" onclick="openMenu()">&#8593</button>
-            <button id="arrow-down" onclick="closeMenu()">&#8595</button>
+            <button id="arrow-up" onclick="openMenu()">&#8593;</button>
+            <button id="arrow-down" onclick="closeMenu()">&#8595;</button>
 
-            <div id="study">
+            <a href="study.html"> 
+                <div id="study">
                 <h2>Study</h2>
                 <p> This aims to increase your knowledge about operations of the internet while using top-down appproach
                     of
@@ -83,27 +84,33 @@
                     an
                     unreliable network. </p>
                 <div id="img-study-container">
-                    <img src="../../imgs/Picture 1.png" alt="study_img">
+                    <img src="../../imgs/Picture1.png" alt="study_img">
                 </div>
             </div>
+            </a>
+            <a href="learn.html"> 
             <div id="learn">
                 <h2>Learn</h2>
                 <p> Whether you want to reinforce your learning, or need a reminder about a particular layer in the TCP
                     model. This site includes
                     a brief summary about each TCP/IP layer corresponding to the sections you studied. </p>
                 <div id="img-learn-container">
-                    <img src="../../imgs/Picture 2.png" alt="learn_img">
+                    <img src="../../imgs/Picture2.png" alt="learn_img">
                 </div>
             </div>
+            </a>
+            <a href="quiz.html"> 
             <div id="quiz">
                 <h2>Quiz</h2>
                 <p> To engage your knowledge pratically, we have indroduced quizes. As you learn each layer within the
                     TCP/IP model.</p>
                 <div id="img-quiz-container">
-                    <img src="../../imgs/Picture 3.png" alt="quiz_img">
+                    <img src="../../imgs/Picture3.png" alt="quiz_img">
                 </div>
             </div>
+            </a>
         </div>
+    </div>
         <div>
             <p id="note">This site follows a top down approach of the TCP/IP network to enable a better understanding of
                 computer
@@ -113,4 +120,4 @@
 
 </body>
 
-</html
+</html>

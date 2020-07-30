@@ -1,3 +1,12 @@
+/*
+ Arthur: 
+    Adanna
+ Date: 
+    26/07/20
+ Purpose:
+    The holds the overall theme for the web page
+*/
+
 // Defines the font family stack for the web page
 html {
     @include text-font();
@@ -22,6 +31,7 @@ html {
     left: $left;
 }
 
+//Header theme
 #header {
 
     #header-img-1 {
@@ -49,16 +59,65 @@ html {
 
     form {
         position: relative;
-        bottom: 2780px;
+        bottom: 2800px;
         left: 60%;
         
         input, button {
-            border-radius: 50px;
+            border-radius: 5px;
+            padding: 10px;
+            border: 1px solid gray;
+        }
+        input[type=text]{
+            width: 30%;
+        }
+
+        button {
+            color: white;
+            background-color: $secondary-color;
+            cursor: pointer;
         }
     }
 
     #mobile_header {
         visibility: hidden;
+    }
+
+}
+
+#arrow-down, #arrow-up {
+    visibility: hidden; // These are elements made for the mobile page, far the main page there are simply hidden
+}
+
+
+//navigation theme
+nav {
+    position: absolute;
+    top: 290px;
+    margin-left: 30px;
+    ul {
+        list-style-type: none;
+        background-color: $secondary-color;
+        padding: 10px;
+        border-radius: 50px;
+    }
+
+    li {
+        padding-bottom: 100px;
+        a {
+            color: white;
+            width: 50em;
+            height: 50em;
+            text-decoration: none;
+        }
+
+        a:hover:not(.active){
+            color: black;
+        }
+
+    }
+
+    #last-element {
+        padding-bottom: inherit; //To let the last element have a normal padding spacing
     }
 
 }
