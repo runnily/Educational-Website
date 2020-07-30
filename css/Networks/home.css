@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Dekko&display=swap");
+/*
+ Arthur: 
+    Adanna
+ Date: 
+    26/07/20
+ Purpose:
+    The holds the overall theme for the web page
+*/
+html {
+  font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
+}
+
+#content {
+  overflow: hidden;
+}
+
+#header #header-img-1 {
+  position: relative;
+  border-radius: 50%;
+  transform: skew(-6deg);
+  background-color: #F42069;
+  background-image: linear-gradient(blue, plum, #E6E1FD);
+  width: 800px;
+  height: 800px;
+  bottom: 2040px;
+  left: 430px;
+}
+#header #header-img-3 {
+  position: relative;
+  border-radius: 50%;
+  transform: skew(-6deg);
+  background-color: #F42069;
+  background-image: linear-gradient(blue, plum, #E6E1FD);
+  width: 150px;
+  height: 150px;
+  bottom: 2510px;
+  left: 1120px;
+}
+#header #header-img-2 {
+  position: relative;
+  border-radius: 50%;
+  transform: skew(-6deg);
+  background-color: #F42069;
+  background-image: linear-gradient(blue, plum, #E6E1FD);
+  width: 700px;
+  height: 700px;
+  bottom: 470px;
+  left: 1010px;
+}
+#header #header-img {
+  position: relative;
+  border-radius: 50%;
+  transform: skew(-6deg);
+  background-color: #F42069;
+  background-image: linear-gradient(blue, plum, #E6E1FD);
+  width: 1000px;
+  height: 1000px;
+  bottom: 1440px;
+  left: -220px;
+}
+#header h1 {
+  position: absolute;
+  top: 65px;
+  margin: 50px;
+}
+#header form {
+  position: relative;
+  bottom: 2800px;
+  left: 60%;
+}
+#header form input, #header form button {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid gray;
+}
+#header form input[type=text] {
+  width: 30%;
+}
+#header form button {
+  color: white;
+  background-color: #F42069;
+  cursor: pointer;
+}
+#header #mobile_header {
+  visibility: hidden;
+}
+
+#arrow-down, #arrow-up {
+  visibility: hidden;
+}
+
+nav {
+  position: absolute;
+  top: 290px;
+  margin-left: 30px;
+}
+nav ul {
+  list-style-type: none;
+  background-color: #F42069;
+  padding: 10px;
+  border-radius: 50px;
+}
+nav li {
+  padding-bottom: 100px;
+}
+nav li a {
+  color: white;
+  width: 50em;
+  height: 50em;
+  text-decoration: none;
+}
+nav li a:hover:not(.active) {
+  color: black;
+}
+nav #last-element {
+  padding-bottom: inherit;
+}
+
+.links a {
+  cursor: pointer;
+  color: black;
+}
+.links #study {
+  background-color: #FBE4E4;
+  border-radius: 100px;
+  position: relative;
+  bottom: 2670px;
+  left: 14%;
+  width: 300px;
+  height: 600px;
+}
+.links #study h2 {
+  position: absolute;
+  left: 40%;
+}
+.links #study #img-study-container {
+  position: absolute;
+  bottom: -30px;
+  left: 20px;
+}
+.links #study #img-study-container img {
+  float: right;
+  max-width: 100%;
+  height: auto;
+}
+.links #study p {
+  position: absolute;
+  top: 50px;
+  margin: 25px;
+  color: gray;
+  font-size: 18px;
+}
+
+#learn {
+  background-color: #D4FAE5;
+  border-radius: 100px;
+  position: relative;
+  left: 36%;
+  bottom: 3300px;
+  width: 800px;
+  height: 300px;
+  z-index: 0;
+}
+#learn h2 {
+  position: absolute;
+  left: 45%;
+}
+#learn #img-learn-container {
+  position: absolute;
+  bottom: -60px;
+  left: 485px;
+}
+#learn #img-learn-container img {
+  float: right;
+  max-width: 100%;
+  height: auto;
+}
+#learn p {
+  position: absolute;
+  top: 50px;
+  margin: 25px;
+  color: gray;
+  font-size: 18px;
+}
+
+#quiz {
+  background-color: #E6E1FD;
+  border-radius: 100px;
+  position: relative;
+  left: 36%;
+  bottom: 3280px;
+  width: 800px;
+  height: 300px;
+  z-index: 0;
+}
+#quiz h2 {
+  position: absolute;
+  left: 45%;
+}
+#quiz #img-quiz-container {
+  position: absolute;
+  bottom: -30px;
+  left: 485px;
+}
+#quiz #img-quiz-container img {
+  float: right;
+  max-width: 100%;
+  height: auto;
+}
+#quiz p {
+  position: absolute;
+  top: 50px;
+  margin: 25px;
+  color: gray;
+  font-size: 18px;
+}
+
+#note {
+  position: relative;
+  bottom: 3250px;
+  left: 25%;
+  color: purple;
+}
+
+@media only screen and (max-width: 1300px) {
+  nav {
+    top: -20px;
+    margin-left: 0px;
+    left: 0px;
+    width: 100%;
+  }
+  nav ul {
+    border-radius: 0%;
+  }
+  nav ul li {
+    padding-bottom: 0px;
+    display: inline;
+    padding-left: 5%;
+  }
+  nav ul #last-element {
+    padding-right: 200px;
+  }
+
+  .links {
+    position: relative;
+    bottom: 2700px;
+    margin: 20px;
+  }
+  .links #study {
+    width: 100%;
+    height: 300px;
+    left: 0%;
+    bottom: 0%;
+    margin-bottom: 2%;
+  }
+  .links #study #img-study-container {
+    position: absolute;
+    bottom: -20%;
+    right: -5%;
+    left: 485px;
+  }
+  .links #learn {
+    width: 100%;
+    height: 300px;
+    left: 0%;
+    bottom: 0%;
+    margin-bottom: 2%;
+  }
+  .links #learn #img-learn-container {
+    position: absolute;
+    bottom: -20%;
+    right: -5%;
+  }
+  .links #quiz {
+    width: 100%;
+    height: 300px;
+    left: 0%;
+    bottom: 0%;
+    margin-bottom: 2%;
+  }
+  .links #quiz #img-quiz-container {
+    position: absolute;
+    bottom: -20%;
+    right: -5%;
+  }
+
+  #note {
+    bottom: 2650px;
+    left: 15%;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */
