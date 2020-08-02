@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Dekko&display=swap");
+#content h1 {
+  font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
+  text-align: center;
+}
+#content .question_container {
+  margin: 10%;
+  cursor: pointer;
+  font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
+}
+#content .question_container .answer_container {
+  border: solid 2px grey;
+  margin: 3%;
+  border-radius: 10px;
+  padding: 2%;
+}
+#content .question_container .answer_container input[type=radio] {
+  padding-left: 3%;
+}
+#content .question_container .answer_container input {
+  background-color: #4A5CE6;
+}
+#content .question_container .answer_container .radio:checked + label {
+  /* target next sibling (+) label */
+  background-color: blue;
+}
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 -10px purple;
+  }
+  40% {
+    box-shadow: 0 0 20px purple;
+  }
+  60% {
+    box-shadow: 0 0 20px purple;
+  }
+  100% {
+    box-shadow: 0 0 -10px purple;
+  }
+}
+@keyframes textmoving {
+  0% {
+    padding-left: 2%;
+  }
+  100% {
+    padding-left: 4%;
+  }
+}
+#content .question_container .answer_container:hover {
+  background-color: #4A5CE6;
+  animation: glowing 2000ms, textmoving 1000ms;
+  box-shadow: 0 0 -10px purple;
+  padding-left: 4%;
+}
+#content #button_submit, #content #back {
+  border-radius: 50px;
+  font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
+  border: solid 2px grey;
+  color: white;
+}
+#content #button_submit {
+  background-color: #4A5CE6;
+  margin: 5%;
+}
+#content #back_container #back {
+  background-color: #36c236;
+  float: right;
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  margin-right: 5%;
+  color: white;
+}
+
+/*# sourceMappingURL=quiz_questions.css.map */

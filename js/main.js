@@ -41,3 +41,13 @@ function openMenu() {
     },10);
 }
 
+function closeQuiz() {
+    var quiz = document.getElementById("quiz_border");
+    quiz.style.visibility = "hidden";
+}
+
+function openQuiz() {
+    var quiz = document.getElementById("quiz_border");
+    quiz.style.visibility = "visible";
+}
+

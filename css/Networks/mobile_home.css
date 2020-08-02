@@ -199,6 +199,16 @@ nav li a:hover:not(.active) {
   position: absolute;
   bottom: 15%;
   left: 4.5%;
+  z-index: 2;
+}
+#quiz_border button {
+  position: relative;
+  left: 10%;
+  top: 44px;
+  border: solid 2px;
+  background-color: red;
+  color: white;
+  border-radius: 50px;
 }
 #quiz_border #quiz_page {
   border-radius: 50px;
@@ -206,7 +216,6 @@ nav li a:hover:not(.active) {
   height: 80vh;
   border: solid;
   background-color: white;
-  z-index: 0;
 }
 
 /*# sourceMappingURL=mobile_home.css.map */

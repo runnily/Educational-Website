@@ -99,7 +99,7 @@
                 </div>
             </div>
             </a>
-            <a href="quiz.html"> 
+            <a onclick = "openQuiz()"> 
             <div id="quiz">
                 <h2>Quiz</h2>
                 <p> To engage your knowledge pratically, we have indroduced quizes. As you learn each layer within the
@@ -115,7 +115,8 @@
                 computer
                 networks</p>
         </div>
-        <div id="quiz_border">
+        <div id="quiz_border" style="visibility: hidden;">
+            <button type="button" onclick="closeQuiz()">&#10005;</button>
             <iframe id="quiz_page" src="quiz.html" title="Iframe Example"></iframe>
         </div>
     

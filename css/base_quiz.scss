@@ -31,7 +31,7 @@ h1 {
 
     a:hover {
         .button_links {
-            background-color: #4A5CE6;
+            background-color: $primary-color;
             color: white;
             animation: glowing 5000ms infinite;
         }
@@ -40,7 +40,7 @@ h1 {
     .button_links {
         border: solid 2px grey;
         border-radius: 50px;
-        margin: 5%;
+        margin: 10%;
 
         p {
             text-align: center;
