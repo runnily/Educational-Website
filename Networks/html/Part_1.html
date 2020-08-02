@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Quiz</title>
+    <meta name="quiz" content="The HTML5 Herald">
+    <meta name="runnily" content="SitePoint">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../css/Networks/quiz_questions.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+    <!-- imports angular -->
+
+</head>
+
+<body>
+
+    <div id="content">
+        <div id="back_container"><a id="back" href="quiz.html">&#8592;</a></div>
+        <h1>Part 1 Quiz</h1>
+        <form>
+            <div data-ng-app="" data-ng-init="questions=[
+            {name: 'Question 1', answer_one:'todo', answer_two:'todo', answer_three:'todo'},
+            {name:'Question 2', answer_one:'todo', answer_two:'todo', answer_three:'todo'},
+            {name:'Question 3', answer_one:'todo', answer_two:'todo', answer_three:'todo'},
+            {name:'Question 4', answer_one:'todo', answer_two:'todo', answer_three:'todo'},
+            {name:'Question 5', answer_one:'todo', answer_two:'todo', answer_three:'todo'},
+            {name:'Question 6', answer_one:'todo', answer_two:'todo', answer_three:'todo'},
+            {name:'Question 7', answer_one:'todo', answer_two:'todo', answer_three:'todo'},
+            {name:'Question 8', answer_one:'todo', answer_two:'todo', answer_three:'todo'},
+            {name:'Question 9', answer_one:'todo', answer_two:'todo', answer_three:'todo'},
+            {name:'Question 10', answer_one:'todo', answer_two:'todo', answer_three:'todo'}]">
+
+            <div data-ng-repeat="q in questions" class="question_container">
+                <h2 >{{ q.name }}</h2>
+                <div class="answer_container">
+                    <input type="radio" name="{{q.name}}" id="{{q.answer_one}}" value="{{q.answer_one}}">
+                    <label for="{{q.answer_one}}">{{q.answer_one}}</label>
+                </div>
+                <div class="answer_container">
+                    <input type="radio" name="{{q.name}}" id="{{q.answer_two}" value="{{q.answer_two}}">
+                    <label for="{{q.answer_two}}">{{q.answer_two}}</label>
+                </div>
+                <div class="answer_container">
+                    <input type="radio" name="{{q.name}}" id="{{q.answer_three}}" value="{{q.answer_three}}">
+                    <label for="{{q.answer_three}}">{{q.answer_three}}</label>
+                </div>
+            </div>
+            <input id= "button_submit" type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+</html>
