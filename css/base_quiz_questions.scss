@@ -1,84 +1,9 @@
-
-#content {
-
-    h1 {
-        @include text-font();
-        text-align: center;
-    }
-
-    .question_container {
-        margin: 10%;
-        cursor: pointer;
-        @include text-font();
-
-
-        .answer_container {
-            border: solid 2px grey;
-            margin: 3%;
-            border-radius: 10px;
-            padding: 2%;
-            
-
-            input[type="radio"]{
-                padding-left: 3%;
-            }
-
-            input {
-                background-color: $primary-color;
-            }
-
-            .radio:checked + label {   /* target next sibling (+) label */
-                background-color: blue;
-              }
-
-        }
-
-        
-    @keyframes glowing {
-        0% { box-shadow: 0 0 -10px $tertiary-color; }
-        40% { box-shadow: 0 0 20px $tertiary-color; }
-        60% { box-shadow: 0 0 20px $tertiary-color; }
-        100% { box-shadow: 0 0 -10px $tertiary-color; }
-    }
-
-    @keyframes textmoving {
-        0% {padding-left: 2%}
-        100% {padding-left: 4%}
-    }
-
-        .answer_container:hover {
-            background-color: $primary-color;
-            animation: glowing 2000ms, textmoving 1000ms;
-            box-shadow: 0 0 -10px $tertiary-color; 
-            padding-left: 4%;
-        }
-        
-
-    }
-
-    #button_submit, #back{
-        border-radius: 50px;
-        @include text-font();
-        border: solid 2px grey;
-        color: white;
-    }
-
-    #button_submit {
-        background-color: $primary-color;
-        margin: 5%;
-    }
-
-    #back_container {
-
-        #back {
-            background-color: rgb(54, 194, 54);
-            float: right;
-            width: 50px;
-            height: 20px;
-            text-align: center;
-            margin-right: 5%;
-            color: white;
-            
-        }
-    }
-}
+/*
+    Arthur: 
+        Adanna Obibuaku
+    Date:
+        30/07/20
+    Purpose:
+        This is the design for the quiz question page
+*/
+@import "secondary_theme.scss"

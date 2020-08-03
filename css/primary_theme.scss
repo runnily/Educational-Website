@@ -1,0 +1,157 @@
+/*
+ Arthur: 
+    Adanna
+ Date: 
+    26/07/20
+ Purpose:
+    The holds the overall theme for the web page
+*/
+
+// Defines the font family stack for the web page
+html {
+    @include text-font();
+}
+
+// This is to make the div header elements hidden
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+#content {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+// ------------------------------------------------------------------- This is the header section -------------------------------------------------------------------
+@mixin circle($width, $height, $bottom, $left) {
+    // A function which creates a cicrular div element used for as a header image
+    position: relative;
+    border-radius: 50%;
+    transform: skew(-6deg);
+    background-color: $secondary-color;
+    background-image: $header-color;
+    width: $width;
+    height: $height;
+    bottom: $bottom;
+    left: $left;
+}
+
+//Header theme
+#header {
+    height: 490px;
+    width: 100%;
+    overflow: hidden;
+
+    #header-img-1 {
+        @include circle(800px, 800px, 2040px, 430px);
+        
+    }
+    #header-img-3 {
+        @include circle(150px, 150px, 2510px, 1120px);
+    }
+
+    #header-img-2 {
+        @include circle(700px, 700px, 470px, 1010px)
+    }
+
+    #header-img {
+        @include circle(1000px, 1000px, 1440px, -220px);
+
+    }
+
+    h1 {
+        position: absolute;
+        top: 65px;
+        margin: 50px;
+    }
+
+    form {
+        position: relative;
+        bottom: 2800px;
+        left: 60%;
+        
+        input, button {
+            border-radius: 5px;
+            padding: 10px;
+            border: 1px solid gray;
+        }
+        input[type=text]{
+            width: 30%;
+        }
+
+        button {
+            color: white;
+            background-color: $secondary-color;
+            cursor: pointer;
+        }
+    }
+
+    #mobile_header {
+        visibility: hidden;
+    }
+
+}
+
+#arrow-down, #arrow-up {
+    visibility: hidden; // These are elements made for the mobile page, far the main page there are simply hidden
+}
+
+
+//navigation theme
+nav {
+    position: absolute;
+    top: 250px;
+    margin-left: 30px;
+
+    ul {
+        list-style-type: none;
+        background-color: $secondary-color;
+        padding: 10px;
+        border-radius: 50px;
+    }
+
+    li {
+        padding-bottom: 100px;
+        a {
+            color: white;
+            width: 50em;
+            height: 50em;
+            text-decoration: none;
+        }
+
+        a:hover:not(.active){
+            color: black;
+        }
+
+    }
+
+    #last-element {
+        padding-bottom: inherit; //To let the last element have a normal padding spacing
+    }
+
+}
+
+@media only screen and (max-width: 1300px) {
+    nav {
+        top: -20px;
+        margin-left: 0px;
+        left: 0px;
+        width: 100%;
+
+        ul {
+            border-radius: 0%;
+            li {
+                padding-bottom: 0px;
+                display: inline;
+                padding-left: 5%;
+            }
+
+            #last-element {
+                padding-right: 200px;
+            }
+        }
+    }
+}

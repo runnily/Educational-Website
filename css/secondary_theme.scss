@@ -1,0 +1,92 @@
+/*
+    Arthur: 
+        Adanna Obibuaku
+    Date:
+        30/07/20
+    Purpose:
+        A secondary theme design mainly used for iframe displays
+*/
+
+h1, h2, p {
+    @include text-font();
+}
+
+h1 {
+    text-align: center;
+}
+
+@keyframes glowing {
+    0% { box-shadow: 0 0 -10px $tertiary-color; }
+    40% { box-shadow: 0 0 20px $tertiary-color; }
+    60% { box-shadow: 0 0 20px $tertiary-color; }
+    100% { box-shadow: 0 0 -10px $tertiary-color; }
+    }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@keyframes textmoving {
+    0% {padding-left: 2%}
+    100% {padding-left: 4%}
+}
+
+#content {
+    .repeat_container {
+        margin: 10%;
+        cursor: pointer;
+        @include text-font();
+
+        .repeat_inner_container {
+            border: solid 2px grey;
+            margin: 3%;
+            border-radius: 10px;
+            padding: 2%;
+
+            input[type="radio"], p {
+                padding-left: 3%;
+                text-align: center;
+            }
+        }
+    }
+
+
+    .repeat_inner_container:hover {
+        background-color: $primary-color;
+        animation: glowing 2000ms, textmoving 1000ms;
+        box-shadow: 0 0 -10px $tertiary-color; 
+        padding-left: 4%;
+    }
+
+
+    // This code below might be used for some webpages which have a submit button or a back button
+    // The css code below specifys the button_sumbit and how the back button appears
+    #button_submit, #back{
+        border-radius: 50px;
+        @include text-font();
+        border: solid 2px grey;
+        color: white;
+    }
+
+    #button_submit {
+        background-color: $primary-color;
+        margin: 5%;
+    }
+
+    #back_container {
+
+        #back {
+            background-color: rgb(54, 194, 54);
+            float: right;
+            width: 50px;
+            height: 20px;
+            text-align: center;
+            margin-right: 5%;
+            color: white;
+            
+        }
+    }
+
+
+}
