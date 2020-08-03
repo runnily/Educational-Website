@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Dekko&display=swap");
+/*
+    Arthur: 
+        Adanna Obibuaku
+    Date:
+        26/07/2020
+    Purpose:
+        This is the main mobile theme
+*/
 h1, p {
   color: white;
   font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
@@ -195,13 +203,13 @@ nav li a:hover:not(.active) {
     left: 14%;
   }
 }
-#quiz_border {
+.borders {
   position: absolute;
   bottom: 15%;
   left: 4.5%;
   z-index: 2;
 }
-#quiz_border button {
+.borders button {
   position: relative;
   left: 10%;
   top: 44px;
@@ -210,7 +218,7 @@ nav li a:hover:not(.active) {
   color: white;
   border-radius: 50px;
 }
-#quiz_border #quiz_page {
+.borders .pages {
   border-radius: 50px;
   width: 90vw;
   height: 80vh;

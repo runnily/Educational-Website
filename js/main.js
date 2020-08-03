@@ -41,13 +41,12 @@ function openMenu() {
     },10);
 }
 
-function closeQuiz() {
-    var quiz = document.getElementById("quiz_border");
-    quiz.style.visibility = "hidden";
+function closeBorder(el_id) {
+    var el = document.getElementById(String(el_id));
+    el.style.visibility = "hidden";
 }
 
-function openQuiz() {
-    var quiz = document.getElementById("quiz_border");
-    quiz.style.visibility = "visible";
+function openBorder(el_id) {
+    var el = document.getElementById(String(el_id));
+    el.style.visibility = "visible";
 }
-

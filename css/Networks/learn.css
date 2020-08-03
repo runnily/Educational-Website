@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Dekko&display=swap");
+/*
+ Arthur: 
+    Adanna
+ Date: 
+    26/07/20
+ Purpose:
+    The holds the overall theme for the web page
+*/
+html {
+  font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+#content {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+#header {
+  height: 490px;
+  width: 100%;
+  overflow: hidden;
+}
+#header #header-img-1 {
+  position: relative;
+  border-radius: 50%;
+  transform: skew(-6deg);
+  background-color: #F42069;
+  background-image: linear-gradient(blue, plum, #E6E1FD);
+  width: 800px;
+  height: 800px;
+  bottom: 2040px;
+  left: 430px;
+}
+#header #header-img-3 {
+  position: relative;
+  border-radius: 50%;
+  transform: skew(-6deg);
+  background-color: #F42069;
+  background-image: linear-gradient(blue, plum, #E6E1FD);
+  width: 150px;
+  height: 150px;
+  bottom: 2510px;
+  left: 1120px;
+}
+#header #header-img-2 {
+  position: relative;
+  border-radius: 50%;
+  transform: skew(-6deg);
+  background-color: #F42069;
+  background-image: linear-gradient(blue, plum, #E6E1FD);
+  width: 700px;
+  height: 700px;
+  bottom: 470px;
+  left: 1010px;
+}
+#header #header-img {
+  position: relative;
+  border-radius: 50%;
+  transform: skew(-6deg);
+  background-color: #F42069;
+  background-image: linear-gradient(blue, plum, #E6E1FD);
+  width: 1000px;
+  height: 1000px;
+  bottom: 1440px;
+  left: -220px;
+}
+#header h1 {
+  position: absolute;
+  top: 65px;
+  margin: 50px;
+}
+#header form {
+  position: relative;
+  bottom: 2800px;
+  left: 60%;
+}
+#header form input, #header form button {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid gray;
+}
+#header form input[type=text] {
+  width: 30%;
+}
+#header form button {
+  color: white;
+  background-color: #F42069;
+  cursor: pointer;
+}
+#header #mobile_header {
+  visibility: hidden;
+}
+
+#arrow-down, #arrow-up {
+  visibility: hidden;
+}
+
+nav {
+  position: absolute;
+  top: 250px;
+  margin-left: 30px;
+}
+nav ul {
+  list-style-type: none;
+  background-color: #F42069;
+  padding: 10px;
+  border-radius: 50px;
+}
+nav li {
+  padding-bottom: 100px;
+}
+nav li a {
+  color: white;
+  width: 50em;
+  height: 50em;
+  text-decoration: none;
+}
+nav li a:hover:not(.active) {
+  color: black;
+}
+nav #last-element {
+  padding-bottom: inherit;
+}
+
+@media only screen and (max-width: 1300px) {
+  nav {
+    top: -20px;
+    margin-left: 0px;
+    left: 0px;
+    width: 100%;
+  }
+  nav ul {
+    border-radius: 0%;
+  }
+  nav ul li {
+    padding-bottom: 0px;
+    display: inline;
+    padding-left: 5%;
+  }
+  nav ul #last-element {
+    padding-right: 200px;
+  }
+}
+/*
+    Arthur: 
+        Adanna Obibuaku
+    Date:
+        30/07/20
+    Purpose:
+        A secondary theme design mainly used for iframe displays
+*/
+h1, h2, p {
+  font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
+}
+
+h1 {
+  text-align: center;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 -10px purple;
+  }
+  40% {
+    box-shadow: 0 0 20px purple;
+  }
+  60% {
+    box-shadow: 0 0 20px purple;
+  }
+  100% {
+    box-shadow: 0 0 -10px purple;
+  }
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@keyframes textmoving {
+  0% {
+    padding-left: 2%;
+  }
+  100% {
+    padding-left: 4%;
+  }
+}
+#content .repeat_container {
+  margin: 10%;
+  cursor: pointer;
+  font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
+}
+#content .repeat_container .repeat_inner_container {
+  border: solid 2px grey;
+  margin: 3%;
+  border-radius: 10px;
+  padding: 2%;
+}
+#content .repeat_container .repeat_inner_container input[type=radio], #content .repeat_container .repeat_inner_container p {
+  padding-left: 3%;
+  text-align: center;
+}
+#content .repeat_inner_container:hover {
+  background-color: #4A5CE6;
+  animation: glowing 2000ms, textmoving 1000ms;
+  box-shadow: 0 0 -10px purple;
+  padding-left: 4%;
+}
+#content #button_submit, #content #back {
+  border-radius: 50px;
+  font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
+  border: solid 2px grey;
+  color: white;
+}
+#content #button_submit {
+  background-color: #4A5CE6;
+  margin: 5%;
+}
+#content #back_container #back {
+  background-color: #36c236;
+  float: right;
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  margin-right: 5%;
+  color: white;
+}
+
+/*# sourceMappingURL=learn.css.map */
