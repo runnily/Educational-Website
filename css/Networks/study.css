@@ -23,7 +23,7 @@ nav ul li:hover {
   color: black;
   border-radius: 150px;
 }
-nav ul #one_li:hover ul, nav ul #two_li:hover ul, nav ul #three_li:hover ul, nav ul #four_li:hover ul, nav ul #five_li:hover ul, nav ul #six_li:hover ul, nav ul #seven_li:hover ul {
+nav ul li:hover ul {
   visibility: visible;
 }
 nav hr {
