@@ -139,20 +139,20 @@ function enableApp(el_title, el_questions) {
         return {
         template: `<div id="back_container"><a id="back" href="quiz.html">&#8592;</a></div> 
                         <h1>{{quiz.title}}</h1> 
-                        <form>
+                        <form action="../../php/mark.php" method="post">
                             <div data-ng-app="" {{quiz.questions}}>
                                 <div data-ng-repeat="q in quiz.questions" class="question_container repeat_container">
                                 <h2 >{{ q.name }}</h2>
                                 <div class="answer_container repeat_inner_container">
-                                    <input type="radio" name="{{q.name}}" id="{{q.answer_one}}" value="{{q.answer_one}}">
+                                    <input type="radio" name="{{q.name}}" id="{{q.answer_one}}" value="answer_one">
                                     <label for="{{q.answer_one}}">{{q.answer_one}}</label>
                                 </div>
                                 <div class="answer_container repeat_inner_container">
-                                    <input type="radio" name="{{q.name}}" id="{{q.answer_two}" value="{{q.answer_two}}">
+                                    <input type="radio" name="{{q.name}}" id="{{q.answer_two}" value="answer_two">
                                     <label for="{{q.answer_two}}">{{q.answer_two}}</label>
                                 </div>
                                 <div class="answer_container repeat_inner_container">
-                                    <input type="radio" name="{{q.name}}" id="{{q.answer_three}}" value="{{q.answer_three}}">
+                                    <input type="radio" name="{{q.name}}" id="{{q.answer_three}}" value="answer_three">
                                     <label for="{{q.answer_three}}">{{q.answer_three}}</label>
                             </div>
                     </div>
@@ -161,3 +161,10 @@ function enableApp(el_title, el_questions) {
         };
     });
 }
+
+/*
+websites that help:
+    - https://www.w3schools.com/angular/angular_controllers.asp
+    - https://docs.angularjs.org/guide/directive
+    - https://www.tutorialspoint.com/angular2/angular2_components.htm
+*/

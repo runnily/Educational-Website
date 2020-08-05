@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Quiz</title>
+    <meta name="Summary" content="The HTML5 Herald">
+    <meta name="runnily" content="SitePoint">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../css/Networks/secondary_theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+</head>
+
+<body>
+    <h1>Summary</h1>
+    <div id="content">
+        <div id="button" ng-app="" data-ng-init="summary=[
+            {name:'Part 1: Overview', link:'part_1.html', text:'todo'},
+            {name:'Part 2: The Physical Layer', link:'part_2.html', text:'todo'},
+            {name:'Part 3: The Data Link Layer', link:'part_3.html', text:'todo'},
+            {name:'Part 4: The Data Link layer in Broadcast Networks', link:'part_4.html', text:'todo'},
+            {name:'Part 5: The Network Layer', link:'part_5.html', text:'todo'},
+            {name:'Part 6: The Transport Layer', link:'part_6.html', text:'todo'},
+            {name:'Part 7: The Application Layer', link:'part_7.html', text:'todo'}]">
+
+            <div data-ng-repeat="x in summary" syle="border: initial" class="repeat_container" href="{{x.link}}">
+                <h2 class="repeat_inner_container">{{x.name}}</h2>
+                <div id="{{x.identifer}}">
+                    <div>
+                        <p style="text-align: justify">{{x.text}}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

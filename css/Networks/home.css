@@ -329,6 +329,9 @@ nav #last-element {
     z-index: -5;
     left: 485px;
   }
+  #content .links #study p {
+    width: 65vw;
+  }
   #content .links #learn {
     width: 100%;
     height: 300px;
@@ -342,6 +345,9 @@ nav #last-element {
     right: 0%;
     z-index: -5;
   }
+  #content .links #learn p {
+    width: 65vw;
+  }
   #content .links #quiz {
     width: 100%;
     height: 300px;
@@ -354,6 +360,9 @@ nav #last-element {
   #content .links #quiz #img-quiz-container {
     right: 0%;
     z-index: -5;
+  }
+  #content .links #quiz p {
+    width: 65vw;
   }
   #content #note {
     bottom: -450px;
