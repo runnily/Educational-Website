@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Dekko&display=swap");
+html {
+  background-color: #A49CF9;
+  font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
+}
+
+nav {
+  width: 15vw;
+  height: 100%;
+}
+nav ul {
+  list-style-type: none;
+  color: white;
+  text-align: center;
+  margin-top: 45%;
+}
+nav ul li ul {
+  padding-right: 50px;
+  visibility: hidden;
+}
+nav ul li:hover {
+  background-color: white;
+  color: black;
+  border-radius: 150px;
+}
+nav ul #one_li:hover ul, nav ul #two_li:hover ul, nav ul #three_li:hover ul, nav ul #four_li:hover ul, nav ul #five_li:hover ul, nav ul #six_li:hover ul, nav ul #seven_li:hover ul {
+  visibility: visible;
+}
+nav hr {
+  border: 1px solid white;
+  width: 10vw;
+}
+nav img {
+  width: 250px;
+  height: auto;
+  margin: 0;
+  position: relative;
+  right: 45px;
+}
+nav iframe {
+  display: inline-block;
+  background-color: white;
+  border: 0;
+  width: 80vw;
+  height: 100vh;
+  position: absolute;
+  top: 2%;
+  left: 15vw;
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+  nav iframe {
+    left: 20vw;
+  }
+}
+
+/*# sourceMappingURL=study.css.map */
