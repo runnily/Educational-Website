@@ -16,6 +16,9 @@ h1 {
 }
 
 @keyframes glowing {
+  /*
+      Used later to change the box shadow of an element.
+  */
   0% {
     box-shadow: 0 0 -10px purple;
   }
@@ -30,11 +33,17 @@ h1 {
   }
 }
 a {
+  /*
+      To make all links have a text-decoration set to none
+  */
   text-decoration: none;
   color: black;
 }
 
 @keyframes textmoving {
+  /*
+      Animation which shifts the padding
+  */
   0% {
     padding-left: 2%;
   }
@@ -43,21 +52,39 @@ a {
   }
 }
 #content .repeat_container {
+  /**
+      Repeat container responds to a certain numbers of classes of div elements which
+      are repeated using the angular framework.
+      Its specifes the margin, cursor and the font of the text
+  **/
   margin: 10%;
   cursor: pointer;
   font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
 }
 #content .repeat_container .repeat_inner_container {
+  /**
+      This repeated container set of class of div element which
+      inside the second repeated container which we defined above.
+      This defines the border, margin, radius and padding.
+  **/
   border: solid 2px grey;
   margin: 3%;
   border-radius: 10px;
   padding: 2%;
 }
 #content .repeat_container .repeat_inner_container input[type=radio], #content .repeat_container .repeat_inner_container p {
+  /**
+      A repeated container may have an input or a p element
+      This simply decides the design.
+  **/
   padding-left: 3%;
   text-align: center;
 }
 #content .repeat_inner_container:hover {
+  /**
+      Defines what should happen when a repeated
+      inner container is hovered on
+  **/
   background-color: #4A5CE6;
   animation: glowing 2000ms, textmoving 1000ms;
   box-shadow: 0 0 -10px purple;
@@ -70,8 +97,17 @@ a {
   color: white;
 }
 #content #button_submit {
+  /**
+      Specifys the design for the button submit only
+  **/
   background-color: #4A5CE6;
   margin: 5%;
+}
+#content #back_container {
+  /**
+      This is the parnet element of the "back element"
+      which design is defined below
+  **/
 }
 #content #back_container #back {
   background-color: #36c236;
@@ -81,6 +117,9 @@ a {
   text-align: center;
   margin-right: 5%;
   color: white;
+}
+#content #header {
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=secondary_theme.css.map */

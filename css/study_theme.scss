@@ -1,36 +1,63 @@
+/*
+    Arthur: 
+        Adanna Obibuaku
+    Date:
+        4/08/20
+    Purpose:
+        This is the study theme, which specifys the study layout for the study html page
+
+*/
+
 html {
-    background-color: $tertiary-color-1;
+    /*
+        Specifys the html color backgroun
+    */
+    background-color: $tertiary-color-1; 
     @include text-font();
 }
 
 nav {
+    /*
+        This is a nav section which contains all the section which the user can study
+        When hover the user would see the desired page with they can study.
+    */
     width: 15vw;
     height: 100%;
     ul {
+        /**
+            Nav element consists of a ul which specifys the style
+        **/
         list-style-type: none;
         color: white;
         text-align: center;
-        margin-top: 45%;
+        margin-top: 45%; // To give the elements space after each other
+
         li {
             ul {
-                padding-right: 50px; 
-                visibility: hidden;
+                padding-right: 50px; //moves box
+                visibility: hidden; // we want the ul to be inially hidden... to be later visiable when hovered
             }
         }
 
         li:hover {
+            /**
+                Specifys what happens when li is hover upon
+            **/
             background-color: white;
             color: black;
             border-radius: 150px;
 
             ul {
-                visibility: visible;
+                visibility: visible; 
             }
         }
 
     }
 
     hr {
+        /**
+            Horizontal to seprate the list and the img
+        **/
         border: 1px solid white;
         width: 10vw;
     }
@@ -44,6 +71,9 @@ nav {
     }
 
     iframe {
+        /**
+            positions the iframe to be next the ul list element.
+        **/
         display: inline-block;
         background-color: white;
         border: 0;
@@ -57,6 +87,9 @@ nav {
 }
 
 @media only screen and (max-width: 800px) {
+    /**
+        The screen
+    **/
     nav {
         iframe {
             left: 20vw;
