@@ -1,4 +1,4 @@
-# images_for_project
+# Educational Website
 📁Algo
 
 📁Networks
