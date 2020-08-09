@@ -58,50 +58,50 @@
                 question
             */
             if ($_GET['part_1'] == "Submit") {
-                $questions = array("ques_1" => "answer_one", "ques_2" =>"answer_three", "ques_3" => "answer_one",
-                "ques_4" =>"answer_three", "ques_5" => "answer_one",  "ques_6" =>"answer_one", 
-                "ques_7" => "answer_three", "ques_8" => "answer_two", "ques_9" => "answer_one",
-                "ques_10" => "answer_one");
+                $questions = array("1" => "answer_one", "2" =>"answer_three", "3" => "answer_one",
+                "4" =>"answer_three", "5" => "answer_one",  "6" =>"answer_one", 
+                "7" => "answer_three", "8" => "answer_two", "9" => "answer_one",
+                "10" => "answer_one");
                 $score = mark($questions);
             }
 
             if ($_GET['part_2'] == "Submit") {
-                $questions = array("ques_1" => "answer_two", "ques_2" =>"answer_one", "ques_3" => "answer_three",
-                "ques_4" =>"answer_three", "ques_5" => "answer_two",  "ques_6" =>"answer_one", 
-                "ques_7" => "answer_one", "ques_8" => "answer_three", "ques_9" => "answer_two",
-                "ques_10" => "answer_one");
+                $questions = array("1" => "answer_two", "2" =>"answer_one", "3" => "answer_three",
+                "4" =>"answer_three", "5" => "answer_two",  "6" =>"answer_one", 
+                "7" => "answer_one", "8" => "answer_three", "9" => "answer_two",
+                "10" => "answer_one");
                 $score = mark($questions);
             }
 
             if ($_GET['part_3'] == "Submit") {
-                $questions = array("ques_1" => "answer_three", "ques_2" =>"answer_one", "ques_3" => "answer_three",
-                "ques_4" =>"answer_three", "ques_5" => "answer_two",  "ques_6" =>"answer_one", 
-                "ques_7" => "answer_one", "ques_8" => "asnwer_three", "ques_9" => "answer_two",
-                "ques_10" => "answer_one");
+                $questions = array("1" => "answer_three", "2" =>"answer_one", "3" => "answer_three",
+                "4" =>"answer_three", "5" => "answer_two",  "6" =>"answer_one", 
+                "7" => "answer_one", "8" => "asnwer_three", "9" => "answer_two",
+                "10" => "answer_one");
                 $score = mark($questions);
             }
 
             if ($_GET['part_4'] == "Submit") {
-                $questions = array("ques_1" => "answer_one", "ques_2" =>"answer_three", "ques_3" => "answer_one",
-                "ques_4" =>"answer_three", "ques_5" => "answer_one",  "ques_6" =>"answer_one", 
-                "ques_7" => "answer_three", "ques_8" => "answer_two", "ques_9" => "answer_one",
-                "ques_10" => "answer_one");
+                $questions = array("1" => "answer_one", "2" =>"answer_three", "3" => "answer_one",
+                "4" =>"answer_three", "5" => "answer_one",  "6" =>"answer_one", 
+                "7" => "answer_three", "8" => "answer_two", "9" => "answer_one",
+                "10" => "answer_one");
                 $score = mark($questions);
             }
 
             if ($_GET['part_6'] == "Submit") {
-                $questions = array("ques_1" => "answer_one", "ques_2" =>"answer_three", "ques_3" => "answer_one",
-                "ques_4" =>"answer_three", "ques_5" => "answer_one",  "ques_6" =>"answer_one", 
-                "ques_7" => "answer_three", "ques_8" => "answer_two", "ques_9" => "answer_one",
-                "ques_10" => "answer_one");
+                $questions = array("1" => "answer_one", "2" =>"answer_three", "3" => "answer_one",
+                "4" =>"answer_three", "5" => "answer_one",  "6" =>"answer_one", 
+                "7" => "answer_three", "8" => "answer_two", "9" => "answer_one",
+                "10" => "answer_one");
                 $score = mark($questions);
             }
 
             if ($_GET['part_7'] == "Submit") {
-                $questions = array("ques_1" => "answer_one", "ques_2" =>"answer_three", "ques_3" => "answer_one",
-                "ques_4" =>"answer_three", "ques_5" => "answer_one",  "ques_6" =>"answer_one", 
-                "ques_7" => "answer_three", "ques_8" => "answer_two", "ques_9" => "answer_one",
-                "ques_10" => "answer_one");
+                $questions = array("1" => "answer_one", "2" =>"answer_three", "3" => "answer_one",
+                "4" =>"answer_three", "5" => "answer_one",  "6" =>"answer_one", 
+                "7" => "answer_three", "8" => "answer_two", "9" => "answer_one",
+                "10" => "answer_one");
                 $score = mark($questions);
             }
 
