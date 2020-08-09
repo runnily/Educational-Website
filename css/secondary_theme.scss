@@ -73,6 +73,13 @@ a {
                 text-align: center;
             }
         }
+        .button_links {
+            background-color: white;
+            width: 80vw;
+            @include text-font();
+            font-size: 1em;
+            
+        }
     }
 
 
@@ -85,6 +92,7 @@ a {
         animation: glowing 2000ms, textmoving 1000ms;
         box-shadow: 0 0 -10px $tertiary-color; 
         padding-left: 4%;
+        cursor: pointer;
     }
 
 

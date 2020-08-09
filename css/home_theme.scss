@@ -186,6 +186,10 @@
  
 
     #content {
+        #arrow-up, #arrow-down {
+            visibility: hidden;
+        }
+        
         @mixin  border-section() {
             width: 100%;
             height: 300px;
