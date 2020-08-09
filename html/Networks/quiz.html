@@ -19,21 +19,20 @@
     <h1>Select a quiz!</h1>
     <div id="content">
         <div id="button" ng-app="" data-ng-init="pages=[
-            {name:'Part 1: Overview', link:'part_1.html', identifer:'part_1'},
-            {name:'Part 2: The Physical Layer', link:'part_2.html', identifer:'part_2'},
-            {name:'Part 3: The Data Link Layer', link:'part_3.html', identifer:'part_3'},
-            {name:'Part 4: The Data Link layer in Broadcast Networks', link:'part_4.html', identifer:'part_4'},
-            {name:'Part 5: The Network Layer', link:'part_5.html', identifer:'part_5'},
-            {name:'Part 6: The Transport Layer', link:'part_6.html', identifer:'part_6'},
-            {name:'Part 7: The Application Layer', link:'part_7.html', identifer:'part_7'}]">
+            {name:'Part 1: Overview', identifer:'part_1'},
+            {name:'Part 2: The Physical Layer', identifer:'part_2'},
+            {name:'Part 3: The Data Link Layer', identifer:'part_3'},
+            {name:'Part 4: The Data Link layer in Broadcast Networks', identifer:'part_4'},
+            {name:'Part 5: The Network Layer', identifer:'part_5'},
+            {name:'Part 6: The Transport Layer',identifer:'part_6'},
+            {name:'Part 7: The Application Layer', identifer:'part_7'}]">
 
-            <a data-ng-repeat="x in pages" class="repeat_container" href="{{x.link}}">
-                <div class="button_links repeat_inner_container" id="{{x.identifer}}">
-                    <div>
-                        <p>{{x.name}}</p>
-                    </div>
+            <form action="../../php/test.php">
+                <div data-ng-repeat="x in pages" class="repeat_container" value="{{x.identifer}}">
+                    <button class="button_links repeat_inner_container" type="submit" name="Submit" value="{{x.identifer}}" id="{{x.identifer}}">{{x.name}}
+                    </button>
                 </div>
-            </a>
+           </form>
 
         </div>
     </div>

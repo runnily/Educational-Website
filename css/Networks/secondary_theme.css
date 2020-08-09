@@ -80,6 +80,12 @@ a {
   padding-left: 3%;
   text-align: center;
 }
+#content .repeat_container .button_links {
+  background-color: white;
+  width: 80vw;
+  font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
+  font-size: 1em;
+}
 #content .repeat_inner_container:hover {
   /**
       Defines what should happen when a repeated
@@ -89,6 +95,7 @@ a {
   animation: glowing 2000ms, textmoving 1000ms;
   box-shadow: 0 0 -10px purple;
   padding-left: 4%;
+  cursor: pointer;
 }
 #content #button_submit, #content #back {
   border-radius: 50px;
