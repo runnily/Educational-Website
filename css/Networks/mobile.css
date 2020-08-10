@@ -86,6 +86,9 @@ nav li a:hover:not(.active) {
   overflow: scroll;
   z-index: 1;
 }
+.links h2 {
+  font-family: "Dekko", "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
+}
 .links a {
   cursor: pointer;
   color: black;

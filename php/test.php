@@ -65,7 +65,7 @@
             $ans_part = $row1['ans_part']; //This would get the answer part
             $ans_part = "'$ans_part'"; // This would put quotations marks around our variable we got from database
             echo "<input type='radio' name=$num value=$ans_part> "; // Creates a radio button
-            echo "<label for=$ans_part>". $row1['answer']. "</label> "; // Creates a radio button
+            echo "<label>". $row1['answer']. "</label> "; // Creates a radio button
             echo "</div> ";
         }
         $question_part++;
