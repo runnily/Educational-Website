@@ -42,6 +42,10 @@
     overflow: visible;
     height: 700px;
 
+    .arrows {
+        visibility: hidden;
+    }
+    
     a {
         cursor: pointer;
         color: black;
@@ -186,9 +190,6 @@
  
 
     #content {
-        #arrow-up, #arrow-down {
-            visibility: hidden;
-        }
         
         @mixin  border-section() {
             width: 100%;

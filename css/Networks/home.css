@@ -76,20 +76,20 @@ html {
   top: 65px;
   margin: 50px;
 }
-#header form {
+#header form, #header #search {
   position: relative;
   bottom: 2800px;
   left: 60%;
 }
-#header form input, #header form button {
+#header form input, #header form button, #header #search input, #header #search button {
   border-radius: 5px;
   padding: 10px;
   border: 1px solid gray;
 }
-#header form input[type=text] {
+#header form input[type=text], #header #search input[type=text] {
   width: 30%;
 }
-#header form button {
+#header form button, #header #search button {
   color: white;
   background-color: #F42069;
   cursor: pointer;
@@ -182,6 +182,9 @@ nav #last-element {
   top: 200px;
   overflow: visible;
   height: 700px;
+}
+.links .arrows {
+  visibility: hidden;
 }
 .links a {
   cursor: pointer;
@@ -315,9 +318,6 @@ nav #last-element {
 }
 
 @media only screen and (max-width: 1300px) {
-  #content #arrow-up, #content #arrow-down {
-    visibility: hidden;
-  }
   #content .links {
     width: 100vw;
     height: 100vh;
