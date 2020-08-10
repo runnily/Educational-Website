@@ -184,6 +184,7 @@ nav #last-element {
   height: 700px;
 }
 .links .arrows {
+  position: initial;
   visibility: hidden;
 }
 .links a {

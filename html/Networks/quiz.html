@@ -18,7 +18,7 @@
 <body>
     <h1>Select a quiz!</h1>
     <div id="content">
-        <div id="button" ng-app="" data-ng-init="pages=[
+        <div id="button" data-ng-app="" data-ng-init="pages=[
             {name:'Part 1: Overview', identifer:'part_1'},
             {name:'Part 2: The Physical Layer', identifer:'part_2'},
             {name:'Part 3: The Data Link Layer', identifer:'part_3'},
@@ -28,7 +28,7 @@
             {name:'Part 7: The Application Layer', identifer:'part_7'}]">
 
             <form action="../../php/test.php">
-                <div data-ng-repeat="x in pages" class="repeat_container" value="{{x.identifer}}">
+                <div data-ng-repeat="x in pages" class="repeat_container">
                     <button class="button_links repeat_inner_container" type="submit" name="Submit" value="{{x.identifer}}" id="{{x.identifer}}">{{x.name}}
                     </button>
                 </div>

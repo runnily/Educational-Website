@@ -21,7 +21,7 @@
         <!--
             making use of angular here so that within each correspondign chapter there is description.
         -->
-        <div id="button" ng-app="" data-ng-init="summary=[
+        <div id="button" data-ng-app="" data-ng-init="summary=[
             {name:'Part 1: Overview', link:'study_part_1.html', text:'todo'},
             {name:'Part 2: The Physical Layer', link:'study_part_2.html', text:'todo'},
             {name:'Part 3: The Data Link Layer', link:'study_part_3.html', text:'todo'},
@@ -31,7 +31,7 @@
             {name:'Part 7: The Application Layer', link:'study_part_7.html', text:'todo'}]">
 
             <a data-ng-repeat="x in summary" href="{{x.link}}">
-                <div syle="border: initial" class="repeat_container" >
+                <div class="repeat_container">
                     <h2 class="repeat_inner_container">{{x.name}}</h2>
                     <div id="{{x.identifer}}">
                         <div>

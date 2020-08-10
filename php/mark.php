@@ -29,12 +29,8 @@
                     <div id="header-img-3"></div>
                     <div><img src="../imgs/Picture4.png" alt="header_img" id="mobile_header"></div>
                     <h1>Computer Networks</h1>
-                    <form action="javascript:;" method="GET">
-                        <input type="text" placeholder="Search..." name="search">
-                        <button type="submit" class="fa fa-search"></button>
-                    </form>
         </div>
-        <div id="back_container"><a style="margin: 5%; text-decoration: none; border: 2px solid grey; background-color:  rgb(54, 194, 54); width: 50px;" id="back" href="../html/networks/quiz.html">&#8592;</a></div> 
+        <div id="back_container"><a style="border-radius: 50px; margin: 5%; text-decoration: none; border: 2px solid grey; background-color:  rgb(54, 194, 54); width: 1em; color: white;" id="back" href="../html/networks/quiz.html">&#8592;</a></div> 
         <?php
         /*
                 Arthur:
@@ -125,15 +121,15 @@
                 return $i;
             }
             
-            echo "<p style='text-align: centre; font-size: 50px; margin: 5%;'> Your score is: $score  </p>"; //display score
+            echo "<p style='font-size: 50px; margin: 5%;'> Your score is: $score  </p>"; //display score
 
             //Descides which statement based on the score
             if ($score <= 5) {
-                echo "<p style='text-align: centre; font-size: 50px; margin: 5%; '> Better luck next time </p>";
+                echo "<p style='font-size: 50px; margin: 5%; '> Better luck next time </p>";
             } else if ($score = 6) {
-                echo "<p style='text-align: centre; font-size: 50px; margin: 5%; '> Practice makes perfect! </p>";
+                echo "<p style='font-size: 50px; margin: 5%; '> Practice makes perfect! </p>";
             } else {
-                echo "<p style='text-align: centre; font-size: 50px; margin: 5%; '> Well done! </p>";
+                echo "<p style='font-size: 50px; margin: 5%; '> Well done! </p>";
             }
         ?>
     </div>

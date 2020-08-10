@@ -89,6 +89,11 @@ nav {
 
 //links the user may need
 .links {
+    
+    h2 {
+        @include text-font();
+    }
+
     position: absolute;
     height: 80vh;
     bottom: -85%;
